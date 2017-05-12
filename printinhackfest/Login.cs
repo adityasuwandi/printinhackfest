@@ -12,11 +12,20 @@ namespace printinhackfest
 {
     public partial class Login : Form
     {
+        Form1 utama = new Form1();
         int id;
         string email, password;
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            password = passBox.Text;
+            email = userBox.Text;
+            //utama.Activate;
+             
         }
     }
 }
