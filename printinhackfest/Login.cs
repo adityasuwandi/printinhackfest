@@ -15,9 +15,16 @@ namespace printinhackfest
         Form1 utama = new Form1();
         int id;
         string email, password;
+        register reg = new register();
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            reg.Show();
+            this.Hide();
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -26,8 +33,6 @@ namespace printinhackfest
             email = userBox.Text;
             utama.Show();
             this.Hide(); 
-          
-             
         }
     }
 }
