@@ -24,7 +24,9 @@ namespace printinhackfest
         {
             password = passBox.Text;
             email = userBox.Text;
-            //utama.Activate;
+            utama.Show();
+            this.Hide(); 
+          
              
         }
     }
