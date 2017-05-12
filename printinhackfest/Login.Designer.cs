@@ -1,6 +1,6 @@
 ﻿namespace printinhackfest
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataCetak = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCetak)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // dataCetak
+            // textBox1
             // 
-            this.dataCetak.AccessibleName = "dataCetak";
-            this.dataCetak.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCetak.Location = new System.Drawing.Point(12, 12);
-            this.dataCetak.Name = "dataCetak";
-            this.dataCetak.RowTemplate.Height = 24;
-            this.dataCetak.Size = new System.Drawing.Size(443, 202);
-            this.dataCetak.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(180, 131);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(230, 22);
+            this.textBox1.TabIndex = 0;
             // 
-            // Form1
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(180, 185);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(230, 22);
+            this.textBox2.TabIndex = 1;
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 428);
-            this.Controls.Add(this.dataCetak);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataCetak)).EndInit();
+            this.ClientSize = new System.Drawing.Size(607, 329);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Name = "Login";
+            this.Text = "Login";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataCetak;
-
-        private void Form1_Load(object sender, System.EventArgs e)
-        {
-
-        }
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
-

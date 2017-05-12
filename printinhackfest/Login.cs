@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace printinhackfest
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        int id;
+        string email, password;
+        public Login()
         {
             InitializeComponent();
-
         }
     }
 }
